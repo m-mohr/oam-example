@@ -1,0 +1,51 @@
+{
+  "stac_version": "1.0.0",
+  "stac_extensions": [],
+  "id": "stac-oam-example",
+  "type": "Collection",
+  "title": "OpenAerialMap Examples",
+  "description": "Example STAC Items for some entries on OpenAerialMap, created during STAC workshops.",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "OpenAerialMap",
+    "Open Data",
+    "UAV"
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [-73.047919,-36.83352, 9.838583, 62.697438],
+        [9.835894, 62.695829, 9.838583, 62.697438],
+        [-73.047919,-36.83352,-73.043539,-36.830565]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        ["2020-09-05T22:00:00.000Z", null]
+      ]
+    }
+  },
+  "providers": [
+    {
+      "name": "OpenAerialMap",
+      "roles": ["host"],
+      "url": "https://openaerialmap.org/"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://raw.githubusercontent.com/m-mohr/oam-example/main/catalog.json",
+      "rel": "self"
+    },
+    {
+      "href": "stac-oam-2020_09_06_grytdalen_tjern.json",
+      "title": "Grytdalen Tjern (2020-09-06)",
+      "rel": "item"
+    },
+    {
+      "href": "stac-oam-2022_09_14_parque_ecuador_p1.json",
+      "title": "Parque Ecuador P-1 (2022-09-14)",
+      "rel": "item"
+    }
+  ]
+}

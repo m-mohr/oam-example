@@ -1,0 +1,77 @@
+{
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+  ],
+  "id": "2020_09_06_grytdalen_tjern",
+  "type": "Feature",
+  "geometry": {
+    "type":"Polygon",
+    "coordinates":[[[9.835939,62.697438],[9.835894,62.695845],[9.838538,62.695829],[9.838583,62.697422],[9.835939,62.697438]]]
+  },
+  "bbox": [9.835894, 62.695829, 9.838583, 62.697438],
+  "properties": {
+    "title": "Grytdalen Tjern (2020-09-06)",
+    "datetime": "2020-09-06T10:00:00Z",
+    "start_datetime": "2020-09-05T22:00:00.000Z",
+    "end_datetime": "2020-09-06T20:52:18.691Z",
+    "created": "2020-09-08T00:00:00Z",
+    "updated": "2022-09-16T09:22:00Z",
+    "providers": [
+      {
+        "name": "Ragnvald Larsen",
+        "email": "ragnvald@mindland.com",
+        "roles": ["licensor", "producer"],
+        "url": "https://map.openaerialmap.org/#/0,0,2/user/5b2a160d2b6a08001185f830"
+      },
+      {
+        "name": "OpenAerialMap",
+        "roles": ["host"],
+        "url": "https://openaerialmap.org/"
+      }
+    ],
+    "gsd": 0.01094,
+    "platform": "uav",
+    "proj:epsg": 32632,
+    "proj:wkt2": "PROJCS[\"WGS 84 / UTM zone 32N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",9],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32632\"]]",
+    "license": "CC-BY-4.0",
+    "instruments": [
+      "DJI Mavic Mini"
+    ]
+  },
+  "links": [
+    {
+      "href": "catalog.json",
+      "rel": "root"
+    },
+    {
+      "href": "catalog.json",
+      "rel": "parent"
+    },
+    {
+      "href": "https://raw.githubusercontent.com/m-mohr/oam-example/main/stac-oam-2020_09_06_grytdalen_tjern.json",
+      "rel": "self",
+      "type": "application/json"
+    },
+    {
+      "href": "https://map.openaerialmap.org/#/9.837238500000005,62.69663351094134,18/latest/5f554ce343b9b900074afc12?_k=ohyy7t",
+      "rel": "alternate",
+      "type": "text/html",
+      "title": "Data on OpenAerialMap"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://oin-hotosm.s3.amazonaws.com/5f554c6a43b9b900074afc10/0/5f554c6a43b9b900074afc11.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": ["thumbnail"]
+    },
+    "data": {
+      "href": "https://oin-hotosm.s3.amazonaws.com/631ee60b3cdf1c0006b63c54/0/631ee60b3cdf1c0006b63c55.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Data",
+      "roles": ["data"]
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v1.0.0/schema.json"
+  ],
+  "id": "2022_09_14_parque_ecuador_p1",
+  "type": "Feature",
+  "geometry": {
+    "type":"Polygon",
+    "coordinates":[
+      [
+        [
+          -73.047919,
+          -36.830636
+        ],
+        [
+          -73.047846,
+          -36.83352
+        ],
+        [
+          -73.043539,
+          -36.833449
+        ],
+        [
+          -73.043612,
+          -36.830565
+        ],
+        [
+          -73.047919,
+          -36.830636
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -73.047919,
+    -36.83352,
+    -73.043539,
+    -36.830565
+  ],
+  "properties": {
+    "title": "Parque Ecuador P-1 (2022-09-14)",
+    "datetime": "2022-09-14T08:35:00.000Z",
+    "start_datetime": "2022-09-14T03:00:00.000Z",
+    "end_datetime": "2022-09-14T14:12:47.709Z",
+    "created": "2022-09-16T09:22:00Z",
+    "providers": [
+      {
+        "name": "Cristian Köhler / TOPODRONE SPA",
+        "email": "c.kohler1991@gmail.com",
+        "roles": ["licensor", "producer"],
+        "url": "https://map.openaerialmap.org/#/0,0,2/user/63160e2a14f1ff00081de80c"
+      },
+      {
+        "name": "OpenAerialMap",
+        "roles": ["host"],
+        "url": "https://openaerialmap.org/"
+      }
+    ],
+    "gsd": 0.05,
+    "platform": "uav",
+    "proj:epsg": 2718,
+    "proj:wkt2": "PROJCS[\"WGS 84 / UTM zone 18S\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-75],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",10000000],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32718\"]]",
+    "license": "CC-BY-4.0",
+    "instruments": [
+      "DJI Mavic Pro 2"
+    ]
+  },
+  "links": [
+    {
+      "href": "catalog.json",
+      "rel": "root"
+    },
+    {
+      "href": "catalog.json",
+      "rel": "parent"
+    },
+    {
+      "href": "https://raw.githubusercontent.com/m-mohr/oam-example/main/stac-oam-2022_09_14_parque_ecuador_p1.json",
+      "rel": "self",
+      "type": "application/json"
+    },
+    {
+      "href": "https://map.openaerialmap.org/#/-73.04572900000001,-36.83204251426809,17/latest/6321e2199ee90900078a70c2?_k=w9mgrs",
+      "rel": "alternate",
+      "type": "text/html",
+      "title": "Data on OpenAerialMap"
+    },
+    {
+      "href": "https://tiles.openaerialmap.org/6321e1ca9ee90900078a70c0/0/6321e1ca9ee90900078a70c1/wmts",
+      "rel": "wmts"
+    },
+    {
+      "href": "https://tiles.openaerialmap.org/6321e1ca9ee90900078a70c0/0/6321e1ca9ee90900078a70c1/{z}/{x}/{y}",
+      "rel": "xyz"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://oin-hotosm.s3.amazonaws.com/6321e1ca9ee90900078a70c0/0/6321e1ca9ee90900078a70c1.png",
+      "type": "image/png",
+      "title": "Thumbnail",
+      "roles": ["thumbnail"]
+    },
+    "data": {
+      "href": "https://oin-hotosm.s3.amazonaws.com/6321e1ca9ee90900078a70c0/0/6321e1ca9ee90900078a70c1.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Data",
+      "roles": ["data"],
+      "file:size": 7451155,
+      "file:data_type": "uint8",
+      "proj:shape": [
+        7687,
+        6402
+      ],
+      "eo:bands": [
+        {
+          "common_name": "red"
+        },
+        {
+          "common_name": "green"
+        },
+        {
+          "common_name": "blue"
+        }
+      ]
+    }
+  }
+}
